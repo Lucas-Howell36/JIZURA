@@ -6,12 +6,7 @@
 <title>JIZURA — Trình tạo video lời bài hát chuyển động</title>
 <meta name="description" content="Tạo video lời bài hát chuyển động từ lời trong trình duyệt, rồi xuất MP4.">
 <link rel="canonical" href="https://852wa.github.io/JIZURA/vi/">
-<link rel="alternate" hreflang="ja" href="https://852wa.github.io/JIZURA/">
-<link rel="alternate" hreflang="en" href="https://852wa.github.io/JIZURA/en/">
-<link rel="alternate" hreflang="zh-Hant" href="https://852wa.github.io/JIZURA/zh-hant/">
-<link rel="alternate" hreflang="zh-Hans" href="https://852wa.github.io/JIZURA/zh-hans/">
-<link rel="alternate" hreflang="ko" href="https://852wa.github.io/JIZURA/ko/">
-<link rel="alternate" hreflang="id-ID" href="https://852wa.github.io/JIZURA/id/">
+<link rel="alternate" hreflang="en" href="https://852wa.github.io/JIZURA/">
 <link rel="alternate" hreflang="vi" href="https://852wa.github.io/JIZURA/vi/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JIZURA — Trình tạo video lời bài hát chuyển động">
@@ -410,7 +405,7 @@ button.small.primary { padding: 4px 12px; }
 #app.is-mobile .mode-mobile { display: inline-block; }
 #app.is-mobile .bar { position: sticky; top: 0; z-index: 40; gap: 8px; padding: 8px 10px; }
 #app.is-mobile .brand .tag, #app.is-mobile .brand .word, #app.is-mobile .tour-btn { display: none; }
-#app.is-mobile .brand .mark { font-size: 22px; }
+#app.is-mobile .字面 .mark { font-size: 50px; }
 #app.is-mobile .omk-top, #app.is-mobile .menu-btn { display: inline-block; }
 #app.is-mobile .omk-top { order: 2; margin-left: auto; padding: 9px 16px; font-size: 15px; }
 #app.is-mobile .menu-btn { order: 3; padding: 9px 10px; }
@@ -478,7 +473,6 @@ button.small.primary { padding: 4px 12px; }
 </div>
 <div id="app">
   <header class="bar">
-    <div class="brand"><span class="mark" aria-hidden="true">字面</span><span class="word">JIZURA</span><span class="tag">lyric motion engine</span><span class="ver">v0.10.1</span></div>
     <div class="proj">
       <input id="songTitle" type="text" placeholder="Tên bài hát (hiển thị trên tiêu đề và HUD)" aria-label="Tên bài hát">
       <input id="songArtist" type="text" placeholder="Tên nghệ sĩ" aria-label="Tên nghệ sĩ">
@@ -491,13 +485,12 @@ button.small.primary { padding: 4px 12px; }
       <button id="modePro" aria-pressed="true" title="Hiển thị tất cả cài đặt">Nâng cao</button>
       <button id="btnTour" class="ghost tour-btn" title="Hướng dẫn nhanh về chế độ đơn giản" aria-label="Hướng dẫn sử dụng">？</button>
     </div>
-    <label class="lang-switch"><span class="sr-only">Ngôn ngữ</span><select aria-label="Ngôn ngữ" onchange="if(this.value)location.href=this.value"><option value="../index.html" lang="ja">日本語</option><option value="../en/index.html" lang="en">English</option><option value="../zh-hant/index.html" lang="zh-Hant">繁體中文</option><option value="../zh-hans/index.html" lang="zh-Hans">简体中文</option><option value="../ko/index.html" lang="ko">한국어</option><option value="../id/index.html" lang="id-ID">Bahasa Indonesia</option><option value="../vi/index.html" lang="vi" selected>Tiếng Việt</option></select></label>
+    <label class="lang-switch"><span class="sr-only">Ngôn ngữ</span><select aria-label="Ngôn ngữ" onchange="if(this.value)location.href=this.value"><option value="../index.html" lang="en">English</option><option value="../vi/index.html" lang="vi" selected>Tiếng Việt</option></select></label>
     <div class="acts">
       <label class="file" title="Mở dự án đã lưu (.json)">Mở dự án<input id="fileProject" type="file" accept=".json,application/json"></label>
       <button id="btnSave" title="Lưu dự án dưới dạng .json">Lưu</button>
       <button id="btnAE" title="Xuất dữ liệu dự án sang bảng After Effects">Xuất cho AE</button>
       <button id="btnReset" class="ghost" title="Xóa lời bài hát, bài hát, cài đặt và lịch sử rồi bắt đầu lại">Đặt lại</button>
-      <button id="btnTerms" class="ghost terms-open" title="Quyền và giấy phép đối với sản phẩm đã xuất">Giới thiệu & quyền sử dụng</button>
     </div>
   </header>
 

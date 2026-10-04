@@ -6,17 +6,11 @@ import importlib, json
 
 # code, output folder, html lang, native name
 EDITIONS = [
-    ('ja', '', 'ja', '日本語'),
-    ('en', 'en', 'en', 'English'),
-    ('zh-Hant', 'zh-hant', 'zh-Hant', '繁體中文'),
-    ('zh-Hans', 'zh-hans', 'zh-Hans', '简体中文'),
-    ('ko', 'ko', 'ko', '한국어'),
-    ('id', 'id', 'id-ID', 'Bahasa Indonesia'),
+    ('en', '', 'en', 'English'),
     ('vi', 'vi', 'vi', 'Tiếng Việt'),
 ]
 MODULES = {
-    'zh-Hant': 'app.i18n_zh_hant', 'zh-Hans': 'app.i18n_zh_hans',
-    'ko': 'app.i18n_ko', 'id': 'app.i18n_id', 'vi': 'app.i18n_vi',
+    'vi': 'app.i18n_vi',
 }
 # community translations (PR #6 by Zaious, PR #8 by andongmin94): their glossary wins over app/i18n_<code>.py, which
 # only fills strings added later; their label scripts name every part, style and mood (after app/english.js)
