@@ -12,10 +12,7 @@ EDITIONS = [
 MODULES = {
     'vi': 'app.i18n_vi',
 }
-# community translations (PR #6 by Zaious, PR #8 by andongmin94): their glossary wins over app/i18n_<code>.py, which
-# only fills strings added later; their label scripts name every part, style and mood (after app/english.js)
-COMMUNITY = {'zh-Hant': ('app.chinese', 'app/chinese.js'), 'ko': ('app.korean', 'app/korean.js')}
-# part-name scripts for editions without a community glossary (after app/english.js and the edition's own names)
+
 PART_NAMES = {'zh-Hans': 'app/chinese_hans.js'}
 BASE = 'https://852wa.github.io/JIZURA/'
 
