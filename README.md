@@ -1,6 +1,6 @@
 # JIZURA 字面 — 文字PV自動構成ツール
 
-**English edition:** [Open the app]([https://lucas-howell36.github.io/JIZURA/]) · [English guide](README.en.md)　／　**Tiếng Việt**：[Mở](https://lucas-howell36.github.io/JIZURA/vi/) · [Hướng dẫn](README.vi.md)
+**English edition:** [Open the app](https://lucas-howell36.github.io/JIZURA/) · [English guide](README.en.md)　／　**Tiếng Việt**：[Mở](https://lucas-howell36.github.io/JIZURA/vi/) · [Hướng dẫn](README.vi.md)
 
 英語版 AE パネル：[ScriptUI](https://852wa.github.io/JIZURA/JIZURA_AE_en.jsx) · [CEP](https://852wa.github.io/JIZURA/JIZURA_CEP_en.zip)
 
