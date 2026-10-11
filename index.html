@@ -5,51 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>JIZURA — Lyric Motion Video Maker</title>
 <meta name="description" content="Turn lyrics into animated lyric videos in your browser and export MP4.">
-<link rel="canonical" href="https://lucas-howell36.github.io/JIZURA/">
-<link rel="alternate" hreflang="en" href="https://lucas-howell36.github.io/JIZURA/">
-<link rel="alternate" hreflang="vi" href="https://lucas-howell36.github.io/JIZURA/vi/">
+<link rel="canonical" href="https://852wa.github.io/JIZURA/">
+<link rel="alternate" hreflang="en" href="https://852wa.github.io/JIZURA/">
+<link rel="alternate" hreflang="vi" href="https://852wa.github.io/JIZURA/vi/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="JIZURA — Lyric Motion Video Maker">
 <meta property="og:description" content="Turn lyrics into animated lyric videos in your browser and export MP4.">
-<meta property="og:url" content="https://lucas-howell36.github.io/JIZURA/">
+<meta property="og:url" content="https://852wa.github.io/JIZURA/">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="manifest" href="/manifest.json">
-<style>
-</style>
-</head>
-<body>
-<!-- your existing content -->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-      .then(() => console.log('Service Worker Registered'))
-      .catch(err => console.log('SW Registration Failed:', err));
-  }
-
-  let deferredPrompt;
-  window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-  });
-
-  const installBtn = document.createElement('button');
-  installBtn.textContent = '📥 Install JIZURA';
-  installBtn.style.cssText = 'padding:12px 24px;font-size:16px;cursor:pointer;background:#007bff;color:#fff;border:none;border-radius:8px;margin:20px 0;';
-  installBtn.addEventListener('click', async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      console.log('Install outcome:', outcome);
-      deferredPrompt = null;
-      installBtn.style.display = 'none';
-    }
-  });
-  document.body.appendChild(installBtn);
-</script>
-</body>
-</html>
 <style>
 :root {
   color-scheme: dark;
@@ -38025,30 +37990,6 @@ J.ui = S;
 J.uiApi = { toast, replan, syncUI, pause, seek, flushSave, loadAudioFile, restartPreview, exportRange, exportRangeLines };
 })();
 
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
-    .then(() => console.log('SW Registered'))
-    .catch(err => console.log('SW Failed:', err));
-}
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-});
-const installBtn = document.createElement('button');
-installBtn.textContent = '📥 Install JIZURA';
-installBtn.style.cssText = 'padding:12px 24px;font-size:16px;cursor:pointer;background:#007bff;color:#fff;border:none;border-radius:8px;margin:20px 0;';
-installBtn.addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    console.log('Install outcome:', outcome);
-    deferredPrompt = null;
-    installBtn.style.display = 'none';
-  }
-});
-document.body.appendChild(installBtn);
 </script>
 </body>
 </html>
